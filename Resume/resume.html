@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body> <h1>RESUME</h1>
+   
+ <div style="display:flex; align-items:center; gap:10px;">
+  <span style="font-size:24px; font-weight:bold;">EDUCATION</span>
+  <button onclick="toggleDropdown('edu')">+</button>
+</div>
+<div id="edu" style="display:none; margin-left:20px;">
+  <p>Class 10: 86%</p>
+  <p>Class 12: 81%</p>
+  <p>Currently: First-year Engineering</p>
+</div>
+
+<!-- INTERESTS -->
+<div style="display:flex; align-items:center; gap:10px; margin-top:20px;">
+  <span style="font-size:24px; font-weight:bold;">MY INTERESTS</span>
+  <button onclick="toggleDropdown('interests')">+</button>
+</div>
+<div id="interests" style="display:none; margin-left:20px;">
+  <p>Web Development</p>
+  <p>UI/UX Design</p>
+   <p>3D Modeling</p>
+  <p>Graphic Design</p>
+  <p>App Development</p>
+  <p>Game Development</p>
+  <p>Video Editing</p>
+  <p>CAD</p>
+</div>
+<div style="display:flex; align-items:center; gap:10px; margin-top:20px;">
+  <span style="font-size:24px; font-weight:bold;">SKILLS</span>
+  <button onclick="toggleDropdown('skills')">+</button>
+</div>
+<div id="skills" style="display:none; margin-left:20px;">
+  <p>Web Development</p>
+  <p>Design</p>
+  <p>Communication</p> 
+  <p>Graphic Design</p>
+  <p>3D Modeling</p> 
+</div>
+
+<!--this is java script which functionised the dropdown functionality-->
+<script>
+  function toggleDropdown(id) {
+    var content = document.getElementById(id);
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  }
+</script>
+</body>
+</html>
+<div id="interests" class="dropdown-content">
+    
